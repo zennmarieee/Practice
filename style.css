@@ -42,9 +42,9 @@ header nav .list li a {
     color: black;
 }
 
-.left-menu {
-    display: none;
-}
+
+
+
 
 
 
@@ -117,7 +117,6 @@ img {
         justify-content: space-between;
         margin: 0 1em;
     }
-
     
 }
 
@@ -126,23 +125,23 @@ img {
         display: none;
     }
 
-    .left-menu {
-        position: relative;
+    .right-menu {
         display: block;
     }
 
-    .left-menu button  {
+    .right-menu button  {
         background-color: transparent;
         border: none;
     }
 
+
     [popover] {
-        display: block;
-        position: absolute;
-       translate: -60%;
-       margin: 1em;
+       position: absolute;
+       margin: 1em ;
        height: max-content;
        overflow: hidden;
+       top: 2em;
+       right: 0;
     }   
     
     [popover] a{
