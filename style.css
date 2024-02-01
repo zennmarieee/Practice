@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    background: linear-gradient(to right, #FFF 50%, #D9D9D9 50%);
+}
+
+/* HEADER */
+header {
+    background-color: #F6F6F6;
+    margin: auto;
+}
+
+header nav .fa {
+    display: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
+    margin: 0 5em;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+header nav .list {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+header nav .list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-menu {
+    display: none;
+}
+
+
+
+
+/* TITLE */
+
+.container .title {
+    width: 50%;
+    height: 100vh;
+    /* max-height: 800px; */
+}
+
+.title h1 {
+    margin: 0 auto;
+    width: max-content;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: max(3.5vw, 2rem);
+
+}
+
+/* PICTURE */
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-size: max(2.5vw, 1.5rem);
+}
+
+h2 span {
+    color: white;
+    margin-left: 0.1em;
+}
+
+
+.gallery {
+    margin: 2em auto;
+
+}
+
+.img-container {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 0.5em;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.row-1 , .row-2 {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1085px) {
+    header nav {
+        padding: 1em 2em;
+        justify-content: space-between;
+        margin: 0 1em;
+    }
+
+    
+}
+
+@media (max-width: 850px) {
+    header nav .list {
+        display: none;
+    }
+
+    .left-menu {
+        position: relative;
+        display: block;
+    }
+
+    .left-menu button  {
+        background-color: transparent;
+        border: none;
+    }
+
+    [popover] {
+        display: block;
+        position: absolute;
+       translate: -60%;
+       margin: 1em;
+       height: max-content;
+       overflow: hidden;
+    }   
+    
+    [popover] a{
+        text-decoration: none;
+        color: black;
+        padding: 0.5em;
+    }
+    
+    
+    header nav .fa {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container .title {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+    }
+}
