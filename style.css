@@ -44,8 +44,9 @@ header nav .list li a {
 
 
 
-
-
+.right-menu {
+    display: none;
+}
 
 
 
